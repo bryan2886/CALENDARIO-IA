@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Calendario Historico</title>
+</head>
+<body>
+    <div class="layout">
+        <header class="layout_header">
+            <h1 class="header_title">Calendario Historico</h1>
+        </header>
+
+        <main class="layout_calendar">
+            <form class="calendar_form">
+                <label for="calendarDate" class="calendar_label" >
+                    Selecciona una fecha:
+                </label>
+                <input type="date" id="calendarDate" class="calendar_input" required>
+                <article id="newsContainer" class="calendar_news">
+                    Selecciona un dia anterior a hoy para ver las noticias historicas de ese dia.
+                </article>
+
+            </form>
+        </main>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+html{
+    font-size: 10px;
+}
+
+body{
+   font-size: 1.6rem;
+   font-family:'Montserrat',Arial,Helvetica,sans-serif;
+   background-color: #E9E6E6;
+   height: 100%;
+}
+
+.layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout_header{
+  margin-bottom: 4rem;
+}
+
+.header_title{
+  color: #313F50;
+}
+
+.layout_calendar{
+ width: 36rem;
+ background-color: #313F50;
+ padding: 2.5rem;
+ border-radius: 5px;
+ color: white ;
+ display: flex;
+flex-direction: column;
+gap:1.5rem;
+
+}
+
+.calendar_label{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.calendar_input{
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  border: none;
+  cursor:pointer;
+  width:95%;
+  color: black;
+}
+
+.calendar_news{
+  min-height: 8rem;
+  background-color: #F1F1F1;
+  color:black;
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.calendar_news{
+  min-height: 8rem;
+  background-color: #F1F1F1;
+  color: black;
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
