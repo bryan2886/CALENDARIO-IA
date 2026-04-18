@@ -2,13 +2,14 @@ window.addEventListener("load", () => {
     const dateInput = document.querySelector("#calendarDate");
     const newsContainer = document.querySelector("#newsContainer");
     const today = new Date();
-    const todayISO = today.toISOString().split("T")[0];
+    const todayISO = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
 
 
     dateInput.max = todayISO;
     dateInput.addEventListener("change", async (event) => {
         if (!dateInput.value) return false;
-        const selectedDate = new Date(dateInput.value);
+        const [year, month, day] = dateInput.value.split("-").map(Number);
+        const selectedDate = new Date(year, month - 1, day);
         if (selectedDate >= today) {
             newsContainer.textContent = "Selecciona un dia anterior a hoy para ver las noticias historicas de ese dia.";
             return false;
